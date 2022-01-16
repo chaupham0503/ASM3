@@ -10,7 +10,21 @@
 <style>
 body {font-family: "Lato", sans-serif}
 .mySlides {display: none}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 </style>
+
+
 <body>
 
 <!-- Navigation bar -->
@@ -21,8 +35,8 @@ body {font-family: "Lato", sans-serif}
     <div class="w3-dropdown-hover w3-hide-small">
       <button class="w3-padding-large w3-button" title="More">TEAM PROFILE <i class="fa fa-caret-down"></i></button>
       <div class="w3-dropdown-content w3-bar-block w3-card-4">
-        <a href="#Personal" class="w3-bar-item w3-button">Personal information</a>
         <a href="#teamname" class="w3-bar-item w3-button">About team name</a>
+        <a href="#Personal" class="w3-bar-item w3-button">Personal information</a>
         <a href="#groupprocesses" class="w3-bar-item w3-button">Group processes</a> 
         <a href="#careerplan" class="w3-bar-item w3-button">Carrer plan</a>
       </div>
@@ -185,23 +199,22 @@ body {font-family: "Lato", sans-serif}
       <h2 class="w3-wide w3-center">DETAILED DESCRTIPTION</h2>
       <h2 class="w3-wide w3-center">1.Overview</h2>
     
-        <span><strong>Topic</strong></span>
-        <h6 class="w3-justify">The concept of our project is collected from the idea of assignment 1 of Tien and Chau, two of our members. In the first assignment, Tien offered an app that would provide home training routines and healthy meals to people who cannot afford gym memberships, allowing them to lose weight at home rather than visiting public locations, which could be dangerous in the event of a COVID-19 pandemic. Meanwhile, Chau has developed a platform called 'Smart Health Prediction,' which allows patients to input their health issues so that AI can forecast their existing disease status and provide relevant advice.</h6><br>
-        <h6 class="w3-justify">However, because the field of health care encompasses a wide range of diseases, and we lack knowledge in that area. Therefore, we decided to focus our efforts on obesity. Our app will have two unique features: the 3D image feature will scan the user's body and predict which muscle groups need to be improved, and the Artificial Intelligence feature will automatically calculate the Body Mass Index (BMI) - a weight-to-height ratio that can be used to determine whether a person is overweight or underweight - based on the users' current weight and height input.</h6><br>
-
+      <h4 class="w3-justify"><b>Topic</b></h4>
+        <h6 class="w3-justify">The concept of our project is collected from the idea of assignment 1 of Tien and Chau, two of our members. In the first assignment, Tien offered an app that would provide home training routines and healthy meals to people who cannot afford gym memberships, allowing them to lose weight at home rather than visiting public locations, which could be dangerous in the event of a COVID-19 pandemic. Meanwhile, Chau has developed a platform called 'Smart Health Prediction,' which allows patients to input their health issues so that AI can forecast their existing disease status and provide relevant advice.</h6>
+        <h6 class="w3-justify">However, because the field of health care encompasses a wide range of diseases, and we lack knowledge in that area. Therefore, we decided to focus our efforts on obesity. Our app will have two unique features: the 3D image feature will scan the user's body and predict which muscle groups need to be improved, and the Artificial Intelligence feature will automatically calculate the Body Mass Index (BMI) - a weight-to-height ratio that can be used to determine whether a person is overweight or underweight - based on the users' current weight and height input.</h6>
         <br>
-        <span><strong>Motivation</strong></span>
-        <h6 class="w3-justify">Our team's dedication to this project originates from our concern for people's health. We are still young and have countless opportunities to exercise in order to improve our health, rather than lying in bed or sitting in one spot for long periods of time - which is just as bad as smoking (Better Health Channel n.d.). Being passive over an incredibly long time can lead to obesity, chronic health problems, and even cancers (Better Health Channel n.d.).</h6><br>
+        <h4 class="w3-justify"><b>Motivation</b></h4>
+        <h6 class="w3-justify">Our team's dedication to this project originates from our concern for people's health. We are still young and have countless opportunities to exercise in order to improve our health, rather than lying in bed or sitting in one spot for long periods of time - which is just as bad as smoking (Better Health Channel n.d.). Being passive over an incredibly long time can lead to obesity, chronic health problems, and even cancers (Better Health Channel n.d.).</h6>
         <br>
-        <span><strong>Landscape</strong></span>
-        <h6 class="w3-justify">In the healthcare mobile application industry, few applications focus on the obesity people. Instead, many applications will provide the user with interactions with doctors and explain the users' symptoms, such as Better Help and Teladoc. Regarding nutrition, the market has Generis: DNA & Nutrition application. Specifically, only MySugr – Diabetes Tracker Log is an application that will track the diabetes journey of clients. However, none of these apps can combine all of the features that MyFitnessPal provides.</h6><br>
+        <h4 class="w3-justify"><b>Landscape</b></h4>
+        <h6 class="w3-justify">In the healthcare mobile application industry, few applications focus on the obesity people. Instead, many applications will provide the user with interactions with doctors and explain the users' symptoms, such as Better Help and Teladoc. Regarding nutrition, the market has Generis: DNA & Nutrition application. Specifically, only MySugr – Diabetes Tracker Log is an application that will track the diabetes journey of clients. However, none of these apps can combine all of the features that MyFitnessPal provides.</h6>
 
         <h6 class="w3-justify">With MyFitnessPal, our application has five different features. First, Body scanning using 3D technology: use a phone camera for both operation IOS and Android to identify which part has the most fat in the body. Second, a BMI calculator using AI technology: have two methods to input the information. First method, users input height and weight manually. Another method is using AI technology to calculate BMI by facial image.  Third, Suggested exercise for users using AI Technology: after collecting body scanning and BMI measurements, users can create their workout program or use the suggested exercises appropriate for their body. Fourth, Meal planning using AI technology: this features help users track the amoun of calories intake for a day which is the most critical element to control weights. Besides the main features, our team also provides one more unique feature: Fitness communities. The place where users can share their achievements or milestones on the journey of losing weight, share their meal recipe with personalized ingredients with other users, or simply it is just a place for everyone to find new friends and workout mates. This feature emerges since we know that getting in shape, explicitly escaping obesity, is a challenging journey. Therefore, this fitness community purposely motivates users to achieve their goals.</h6><br>
         <h2 class="w3-wide w3-center">2.Aims</h2>
-        <h6 class="w3-justify">Nowadays, with an year-by-year acceleration in the overweight Vietnamese population, this is defined as an alerting signal for all of us to have awareness of serious diseases derived from obesity (i.e. they could be high risk of stroke, heart disease and several cancers etc), which in turn negatively impact our quality-of life, self-image and even self-esteem (Branson n.d.). Since we - our team are generation Z - who honestly do not pay attention too much to our health and exercises, we have together created this project with the aim to create incentives for everyone to have an active engagement in mitigating the risk of obesity as well as creating a healthy lifestyle. Specifically, we believe that this app could be acted as an initial step to help people gain a basic guideline of preventing obesity through the provision of appropriate standardized exercises and nutritious meal plan.</h6><br>
-        <h6 class="w3-justify">Regarding the first goal of our project, we desire to build a user-friendly mobile app which is easy to use/ implement by users and still ensure to satisfy the customers’ requirements about this app. In fact, we consider our app as an “all-service” app due to our provision of the fully user journey ranging from calculating BMI, detecting obesity, offering exercises, offering meal plans to having a social fitness. Therefore, having a successful, user-friendly app is our first goal. </h6><br>
-        <h6 class="w3-justify">In terms of the second goal, we want to make sure the accuracy of our provided result towards the body scanning, BMI calculator and having or not-having obesity decision. Since our app directly relates to people’s health, we have to follow absolute (100%) accuracy. This is not only about our reputation but also about medical ethics.</h6><br>
-        <h6 class="w3-justify">On the other hand, we also have another goal which is building a fitness community for our app users. We believe that through establishing social interaction, users could enhance their fitness motivations as they could together share their concerned obesity-related topics or even their specific milestones of this fitness-journey.</h6><br>
+        <h6 class="w3-justify">Nowadays, with an year-by-year acceleration in the overweight Vietnamese population, this is defined as an alerting signal for all of us to have awareness of serious diseases derived from obesity (i.e. they could be high risk of stroke, heart disease and several cancers etc), which in turn negatively impact our quality-of life, self-image and even self-esteem (Branson n.d.). Since we - our team are generation Z - who honestly do not pay attention too much to our health and exercises, we have together created this project with the aim to create incentives for everyone to have an active engagement in mitigating the risk of obesity as well as creating a healthy lifestyle. Specifically, we believe that this app could be acted as an initial step to help people gain a basic guideline of preventing obesity through the provision of appropriate standardized exercises and nutritious meal plan.</h6>
+        <h6 class="w3-justify">Regarding the first goal of our project, we desire to build a user-friendly mobile app which is easy to use/ implement by users and still ensure to satisfy the customers’ requirements about this app. In fact, we consider our app as an “all-service” app due to our provision of the fully user journey ranging from calculating BMI, detecting obesity, offering exercises, offering meal plans to having a social fitness. Therefore, having a successful, user-friendly app is our first goal. </h6>
+        <h6 class="w3-justify">In terms of the second goal, we want to make sure the accuracy of our provided result towards the body scanning, BMI calculator and having or not-having obesity decision. Since our app directly relates to people’s health, we have to follow absolute (100%) accuracy. This is not only about our reputation but also about medical ethics.</h6>
+        <h6 class="w3-justify">On the other hand, we also have another goal which is building a fitness community for our app users. We believe that through establishing social interaction, users could enhance their fitness motivations as they could together share their concerned obesity-related topics or even their specific milestones of this fitness-journey.</h6>
 
         <br>
         <h2 class="w3-wide w3-center">3.Plan and Progress</h2>
@@ -218,15 +231,15 @@ body {font-family: "Lato", sans-serif}
         <h4 class="w3-justify"><b>Researching & Consulting phases</b></h4>
 
         <h5 class="w3-justify"><u>a. Researching</u></h5>
-        <h6 class="w3-justify">When it comes to this initial essential phase, since this would be a strong foundation for us to keep executing the onwards phase, we have to research carefully and detail. As a result, we have raised these kinds of questions and then we ourselves tried to find out the answers on our own. We believe that having the answers would help us have a better understanding and preparation of what we have to do next.</h6><br>
+        <h6 class="w3-justify">When it comes to this initial essential phase, since this would be a strong foundation for us to keep executing the onwards phase, we have to research carefully and detail. As a result, we have raised these kinds of questions and then we ourselves tried to find out the answers on our own. We believe that having the answers would help us have a better understanding and preparation of what we have to do next.</h6>
         <li>What are the famous and reliable health apps currently in the marketplace?</li>
         <li>What are their main features or services provided for end-users?</li>
         <li>Pick top 5-ranking apps on Appstore/ Google Play and then take a look at their mobile app as well as identify each strengths and weaknesses of these apps under the end-users’perspective</li>
 
-        <h6 class="w3-justify">After receiving the answers, we started to raise one concern which is about the scope of this project. It is commented to be large and cover too many areas of a health app. Therefore, we have changed our initial plan to only cover obesity. As a result, we raise the two following questions to support our idea.</h6><br>
+        <h6 class="w3-justify">After receiving the answers, we started to raise one concern which is about the scope of this project. It is commented to be large and cover too many areas of a health app. Therefore, we have changed our initial plan to only cover obesity. As a result, we raise the two following questions to support our idea.</h6>
         <li>Is there any app in the marketplace focusing on only obesity?</li>
         <li>If yes, let’s research deeply about its outstanding features that we could learn and have inspiration from them. If not, based on question 3, list down the potential features/ services from other health apps in which we could put those features into our app (FitnessPal).</li>
-        
+        <br>
         <h5 class="w3-justify"><u>b. Consulting</u></h5>
 
         <h6 class="w3-justify">After completing our primary research, we began to consult some IT professionals for their advice and their point of view. We are aware of the important role of this phase from the beginning since these would enable us to run our project more smoothly and lead to better results based on the prior experiences of our mentors, our IT seniors. We have contacted them in many ways via email, Microsoft team and even social media. There are some mentors that we have approached through the private groups about IT expertise on Facebook, and they are very willing to listen to our ideas and give feedback. More emphasis, with the meetings occurring through the Microsoft team, we also ask for their permission to record it and then when it comes to our group meeting, we play it, taking note for the preparation of the development phase. 
@@ -234,9 +247,9 @@ body {font-family: "Lato", sans-serif}
 
         <h4 class="w3-justify"><b>Development phase</b></h4>
         <h5 class="w3-justify"><u>a. Designing a draft broad mobile app based on other health mobile apps’ design</u></h5>
-        <h6 class="w3-justify">In our opinion, this sub-phase required the combination of both content team and technical team. Further explained, we need to seamlessly integrate these aforementioned functionalities into the project and simultaneously, a draft about general mobile app design is required to be easily visualized and make all combined elements uniform.</h6><br>
+        <h6 class="w3-justify">In our opinion, this sub-phase required the combination of both content team and technical team. Further explained, we need to seamlessly integrate these aforementioned functionalities into the project and simultaneously, a draft about general mobile app design is required to be easily visualized and make all combined elements uniform.</h6>
         <h6 class="w3-justify">Firstly, our content team (Châu and Tiên) worked together to build a checklist of necessary functions on the website as well as the requirements that end-users would like to require when downloading our FitnessPal app. We believe that in order to stay-ahead of the rivals, we have to establish a user-friendly and effective interface (UI); consequently, a detailed and organized plan is indispensable. Therefore, this draft would act as a strong base for us to design a mobile app which successfully contains the most crucial and complete features. To illustrate, we will take the figure below as a reference since it relatively resembles our checklist in this phase.</h6>
-  
+        <br>
         <img src="qd.jpg" class="w3-center w3-square" alt="IT picture" style="width:100%">
         <br>
         <h6 class="w3-justify">Alongside the preparation from the content team, the technical team (Huy and Nguyên) come to the stage of deciding appropriate ML algorithms to serve our provided services. We have to say that this task is a very challenging and time-consuming task since all of the team members have majors in Business. After researching the feasible ones and consulting with IT seniors, we have decided the optimal one which is medical diagnosis - support vector machines. Besides, the technical team is in charge of building wireframes to offer outlines and visual appearance. Our specific timeline would be illustrated in more detail in the below section. To illustrate, we will take the figure below as a reference since it could potentially reflect what technical has to do in this phase.</h6><br>
@@ -247,15 +260,15 @@ body {font-family: "Lato", sans-serif}
         <h5 class="w3-justify"><u>b. Developing our final mobile app</u></h5>
         <h6 class="w3-justify">For our Business IT team, this is my first-time that my group is exposed to a real industry in terms of the information-technology field. We are also aware that with the current IT knowledge of all team members, executing this project with minimal errors took us a lot of effort especially in the mobile app coding process. We have spent much time researching the possible tools supporting mobile app development. At the end, we came to the agreement that Visual Studio code would be deployed to build our mobile application. The first reason is that we have time to get familiar with Visual Studio Code through the requirement of GitHub assignment. The second reason is its advantages in building apps for both Android, iOS.</h6><br>
         <h4 class="w3-justify"><b>Testing phase</b></h4>
-        <h6 class="w3-justify">In this phase, we will mainly focus on functional testing since it would determine if the functionalities of our mobile application could work as expected with the predetermined requirement specifications. Some necessary validations that our team need to conduct in this phase are:</h6><br>
+        <h6 class="w3-justify">In this phase, we will mainly focus on functional testing since it would determine if the functionalities of our mobile application could work as expected with the predetermined requirement specifications. Some necessary validations that our team need to conduct in this phase are:</h6>
 
             <li>Installing the mobile application</li>
             <li>Fields-testing</li>
             <li>Update-testing</li>
             <li>Device-resources testing</li>
-            <br>
+            
      
-            <h6 class="w3-justify">Besides, usability testing is needed to ensure the most convenient interaction between app and customers. By applying Focus Group testing, we could give them our prototype and then collect their feedback based on 3 main criterias:</h6><br>
+            <h6 class="w3-justify">Besides, usability testing is needed to ensure the most convenient interaction between app and customers. By applying Focus Group testing, we could give them our prototype and then collect their feedback based on 3 main criterias:</h6>
                 <li>Effectiveness</li>
                 <li>Efficiency</li>
                 <li>Satisfaction</li>
@@ -263,66 +276,107 @@ body {font-family: "Lato", sans-serif}
                 <br>
                 <h2 class="w3-wide w3-center">4.Roles</h2>
 
-              <span><b><i>Phạm Minh Châu - content writer </i></b></span>
+              <span><b><i>Pham Minh Chau - content writer </i></b></span>
               <li>Research and design content for the mobile app</li>
               <li>Contribute the main idea of 3D body scanning app due to her practical experience in industry</li>
               <li>Review the spelling and grammar of the entire website</li>
               <li>Combine the ideas from all group members and then make it the final structure one</li>
               <br>
 
-              <span><b><i>Trần Thị Thuỷ Tiên - content writer </i></b></span>
+              <span><b><i>Tran Thi Thuy Tien - content writer </i></b></span>
               <li>Review the spelling and grammar of the entire mobile app</li>
               <li>Keep track the project progress based on the proposed timeline</li>
               <li>Create a tracking tool by google sheet for all team member to have a better time management</li>
               <li>Keep updated of the project's current status for other members each week.</li>
               <br>
-              <span><b><i>Phạm Xuân Huy - Technical developer</i></b></span>
+              <span><b><i>Pham Xuan Huy - Technical developer</i></b></span>
               <li>Assess the features of the mobile app and have the idea of adding a fitness community to enhance the competitive advantage of the app.</li>
               <li>Research to find the appropriate ML algorithm for BMI calculator and suggested exercises/ meal plan.</li>
               <li>Communicate and convey ideas to the rest of the group.</li>
               <br>
 
-              <span><b><i>Nguyễn Lê Khánh Nguyên  - Technical developer</i></b></span>
+              <span><b><i>Nguyen Le Khanh Nguyen  - Technical developer</i></b></span>
               <li>Outline draft designs for the mobile application’s layout</li>
               <li>Main incharge of building the app prototype</li>
               <li>Research to find the appropriate ML algorithm for BMI calculator and suggested exercises/ meal plan.</li>
               <li>Write-a-report on the technical part of the website.</li>
               <li>Edit the code for a more eye-catching and organized format.</li>
-
+      <br>
       <h2 class="w3-wide w3-center">5.Scope and Limits</h2>
-      <h6 class="w3-justify">A scope of work (SOW) of a project is important as it defines what will be included as a part of our project and what is not, and also the boundaries of the project (Toucan 2020). Therefore, the Business IT team will provide a specific scope statement about the purpose of this project, what we want to create and how to accomplish it.</h6><br>
+      <h6 class="w3-justify">A scope of work (SOW) of a project is important as it defines what will be included as a part of our project and what is not, and also the boundaries of the project (Toucan 2020). Therefore, the Business IT team will provide a specific scope statement about the purpose of this project, what we want to create and how to accomplish it.</h6>
       <h6 class="w3-justify">Overall, this project is to create a mobile application - which can be functioned on both iOS and Android mobile devices - to raise awareness about doing workout and obesity. For better illustration of how our mobile application will help Vietnamese people, we have built our desired product's prototype on Figma. To know more about login function, the app's settings, etc please visit this link:</h6><br>
       <a href="https://www.figma.com/file/LcIeUzKweaa0G2KuOWBK8R/Business-IT-team-(Our-FitnessPal)?node-id=6%3A0">
         <h3 class="w3-center">CLICK HERE TO VISIT THE PROTOTYPE ON FIGMA OF BUSINESS IT TEAM!</h3>
       </a>
       <br>
-      <h6 class="w3-justify">The project will produces four main different features that strongly motivates Vietnamese to move and not being inactive: body scanning, meal planning, BMI calculation and automatical exercises suggested. In particular, one more feature is considered to be developed in the future - building a fitness community on the application.</h6><br>
-      <h6 class="w3-justify">Body Scanning (3D technology): users will turn on their front camera of smartphones to scan their body shapes, with some simple movement - so that the technology can scan different angles and produce digital body models that represent the user's body shapes. Moreover, users can zoom in, zoom out, rotate to identify which part of their body contains the most fat. There will also be a historical data section - where users can keep track of their progress by comparing their past, current and future body shapes. 
-     <h6 class="w3-justify">
-      <img src="UI body scanning.JPG" class="w3-right w3-square" alt="IT picture" style="width:50%">
-      <img src="UI body scanning 2.JPG" class="w3-left w3-square" alt="IT picture" style="width:50%">
-      <h6 class="w3-justify">
-      <h6 class="w3-justify">
-      <h6 class="w3-justify">BMI Calculator (AI Technology): our app will collect the Body Mass Index (BMI) of users to assess the probability of overweight through two ways:</h6><br>
-      <h6 class="w3-justify">Users will manually input their weight/ height and the system will automatically calculate the BMI for further comparison.</h6><br>
-      <img src="UI cal.JPG" class="w3-left w3-square" alt="IT picture" style="width:50%">
-      <img src="UI facial.JPG" class="w3-right w3-square" alt="IT picture" style="width:50%">
+      <h6 class="w3-justify">The project will produces four main different features that strongly motivates Vietnamese to move and not being inactive: body scanning, meal planning, BMI calculation and automatical exercises suggested. In particular, one more feature is considered to be developed in the future - building a fitness community on the application.</h6>
       
-      <h6 class="w3-justify">
-      <h6 class="w3-justify">4. Meal planning (AI technology): according to our research, in order to lose weight, a suitable exercise is not enough, and a reasonable meal planning is very important (NHS n.d.). The most important principle for a person who wants to lose weight is they must control their “calories in smaller than calories out” - it means we have to eat less calories and move more. Therefore, our app will enable users to input the amount of food they are going to eat, and the app will calculate the calories equivalent to that amount of food - so that users can easily track their calorie intake. </h6><br>
-      <img src="UI meal.JPG" class="w3-left w3-square" alt="IT picture" style="width:50%">
-      <img src="UI meall.JPG" class="w3-right w3-square" alt="IT picture" style="width:50%">
-      <h6 class="w3-justify">5. Fitness communities (still-in-consideration function): based on psychological research about physical excercise, people tend to enjoy their activities when they are doing it with a group of friends, or a community that shares the same interests, rather than taking exercise alone (Edwards 2003). Therefore, we aim to create a function that is like a social platform, where users can share their milestones, achievements in terms of fitness and sport, or find a friend that motivates and encourages them to take physical activity. </h6><br>
-      <img src="UI fitt.JPG" class="w3-left w3-square" alt="IT picture" style="width:50%">
-      <img src="UI fit.JPG" class="w3-right w3-square" alt="IT picture" style="width:50%">
+      <li><b>Body Scanning (3D technology):</b> users will turn on their front camera of smartphones to scan their body shapes, with some simple movement - so that the technology can scan different angles and produce digital body models that represent the user's body shapes. Moreover, users can zoom in, zoom out, rotate to identify which part of their body contains the most fat. There will also be a historical data section - where users can keep track of their progress by comparing their past, current and future body shapes.</li>
+      <br>
+      <div class="row">
+        <div class="column">
+          <img src="UI body scanning.JPG" class="w3-right w3-square" alt="IT picture" style="width:100%">
+        </div>
+        <div class="column">
+          <img src="UI body scanning 2.JPG" class="w3-left w3-square" alt="IT picture" style="width:100%">
+        </div>
+      </div>
+     
 
+      <li><b>BMI Calculator (AI Technology)</b>: our app will collect the Body Mass Index (BMI) of users to assess the probability of overweight through two ways:
+        <ul>
+          <li>Users will manually input their weight/ height and the system will automatically calculate the BMI for further comparison</li>
+          <li>Secondly, users can use the ‘BMI via facial recognition’ - this function will also utilise the 3D technology to scan the facial image that users have put in - to identify the BMI through the user's face</li>
+        </ul>
+      </li>
+
+      <div class="row">
+        <div class="column">
+          <img src="UI cal.JPG" class="w3-left w3-square" alt="IT picture" style="width:100%">
+        </div>
+        <div class="column">
+          <img src="UI facial.JPG" class="w3-right w3-square" alt="IT picture" style="width:100%">
+        </div>
+      </div>
+      
+      <li><b>Meal planning (AI technology)</b>: according to our research, in order to lose weight, a suitable exercise is not enough, and a reasonable meal planning is very important (NHS n.d.). The most important principle for a person who wants to lose weight is they must control their “calories in smaller than calories out” - it means we have to eat less calories and move more. Therefore, our app will enable users to input the amount of food they are going to eat, and the app will calculate the calories equivalent to that amount of food - so that users can easily track their calorie intake.</li>
+      <br>
+      <div class="row">
+        <div class="column">
+          <img src="UI meal.JPG" class="w3-left w3-square" alt="IT picture" style="width:100%">
+        </div>
+        <div class="column">
+          <img src="UI meall.JPG" class="w3-right w3-square" alt="IT picture" style="width:100%">
+        </div>
+      </div>
+
+      
+      <li><b>Fitness communities (still-in-consideration function)</b>: based on psychological research about physical excercise, people tend to enjoy their activities when they are doing it with a group of friends, or a community that shares the same interests, rather than taking exercise alone (Edwards 2003). Therefore, we aim to create a function that is like a social platform, where users can share their milestones, achievements in terms of fitness and sport, or find a friend that motivates and encourages them to take physical activity. </h6><br>
+      <br>
+        <div class="row">
+          <div class="column">
+            <img src="UI fitt.JPG" class="w3-left w3-square" alt="IT picture" style="width:100%">
+          </div>
+          <div class="column">
+            <img src="UI fit.JPG" class="w3-right w3-square" alt="IT picture" style="width:100%">
+          </div>
+        </div>
+        
+      
       <h6 class="w3-justify">Besides, our target audience is people who are struggling with being overweight but do not know where to start, or students, adults who have low income that can not afford gym membership fees to download our application as a real coach for their exercise target. </h6>
       <h6 class="w3-justify">With each of the features, the Business IT team will carefully manage the process and problems, with tools to track the progress and productive collaboration in order to satisfy future stakeholders. However, we consider the body scanning feature using the 3D technology would be a time-consuming process for the team that have just started to study about IT, lacking formal knowledge like the Business IT team. According to Golovnya (2020), in order to create the three-dimensional scanning, the team must take into account the C++ for application development, or working on 3D rendering time, etc. However, none of us have ever tried C++ programming, while 3D rendering is a memory intensive process that would be time-consuming for beginners like the Business IT team - about 1-2 months for a beginner to learn about the process before starting out (Snellen 2021). Besides limited human resources, there is also limited time for building this application (which will be analyzed in the time frame section). Therefore, the 3D body scanning function is showing the risk of uncertainty, while the three other functions using AI technology will be examined and implemented for the user interface of the team’s application, but with minimum ability and the team will try to gradually remove bugs, software updates, etc. </h6><br>
-      <li>Limitations:
-      <h6 class="w3-justify">1. Technical knowledge limitations:</h6>
-      <h6 class="w3-justify">As stated above, the Business IT team members are all freshmen when it comes to the field of IT, therefore, the technical knowledge such as coding, fixing bugs, etc still have not fully comprehended by the team members, mainly due to time constraint. Therefore, in order to complete our project idea, members in the team have to continue research and analyse the UI & UX design, device compatibility, PR and digital marketing, etc to successfully launch this application. Without a proper plan of learning about programming language, the team could end up losing so much time, effort and all the fascinating expectation is drained out of it.</h6><br>
-      <h6 class="w3-justify">2. Design limitations: </h6>
-      <h6 class="w3-justify">The screen size of websites and mobile applications is very different from each other: the mobile screen is much smaller than PC or laptop screen, and also the pointing tool is not the same size (for mobile applications is the user's finger, which is much larger than the mouse pointer of PC or laptop). During the process of buidling UI & UX strategy of the Business IT team, the screen resolution, pixel densities, etc is estimated to be time-consuming because we will have to conduct application test over and over again until the application is fit the screen efficiency standard, or until the application is not gobble-up too much battery power of the phone. Thus, we are intending to seek support from other professional mobile application developers - to save time for building this project and avoid faulty functionality. </h6><br>
+
+        <li><b>Limitations</b>
+          <ul>
+            <li>Technical knowledge limitations:</li>
+            <h6 class="w3-justify">As stated above, the Business IT team members are all freshmen when it comes to the field of IT, therefore, the technical knowledge such as coding, fixing bugs, etc still have not fully comprehended by the team members, mainly due to time constraint. Therefore, in order to complete our project idea, members in the team have to continue research and analyse the UI & UX design, device compatibility, PR and digital marketing, etc to successfully launch this application. Without a proper plan of learning about programming language, the team could end up losing so much time, effort and all the fascinating expectation is drained out of it.</h6>
+            <br>
+            <li>Design limitations:</li>
+            <h6 class="w3-justify">The screen size of websites and mobile applications is very different from each other: the mobile screen is much smaller than PC or laptop screen, and also the pointing tool is not the same size (for mobile applications is the user's finger, which is much larger than the mouse pointer of PC or laptop). During the process of buidling UI & UX strategy of the Business IT team, the screen resolution, pixel densities, etc is estimated to be time-consuming because we will have to conduct application test over and over again until the application is fit the screen efficiency standard, or until the application is not gobble-up too much battery power of the phone. Thus, we are intending to seek support from other professional mobile application developers - to save time for building this project and avoid faulty functionality.</h6>
+          </ul>
+        </li>
+      <br>
+
       <h2 class="w3-wide w3-center">6. Tools and technologies:</h2>
       <h6 class="w3-justify">Based on the functionality of this mobile application, the tools and technologies for our project will be divided into two aspects: Artificial Intelligence (with Machine Learning algorithms) and 3D technologies. The detailed description about these two technologies have been examined in previous assignments, therefore, in this section, the tools & technologies that needed to build the structure of the application and to design the user interface will be examined. </h6><br>
       <h6 class="w3-justify">Regarding the tools for the design functionality of our mobile application, the Business IT team chose UML, Python with a hope to create a professional and eye-catching outlook for the application. Moreover, the ANDROMO platform will also be utilized to design the user interface, and develop our application that can be downloaded from both Android and iOS mobile devices</h6><br>
@@ -464,7 +518,7 @@ body {font-family: "Lato", sans-serif}
   <div class="w3-container w3-content w3-padding-64" style="max-width:1000px" id="skillsandjobs">
       <h2 class="w3-wide w3-center">SKILLS AND JOBS</h2>
     <h6 class="w3-justify">Human resources is the determining factor that determines the success or failure of a project. Therefore, four important position descriptions below will be presented to further develop this application</h6>
-    <h4 class="w3-justify"><b>Mobile application developer:</b></h4>
+    <h4 class="w3-justify"><b>Mobile application developer</b></h4>
     <ul>
       <li>Roles
         <ul>
@@ -574,30 +628,46 @@ body {font-family: "Lato", sans-serif}
 <div class="w3-black">
   <div class="w3-container w3-content w3-padding-64" style="max-width:1000px" id="groupreflection">
       <h2 class="w3-wide w3-center">GROUP REFLECTION</h2>
+<<<<<<< HEAD
       <li>Our group - Business IT
         <h6 class="w3-justify">The entire process for our group project went quite well in terms of catching up to the timeframe that had been set in the beginning. Aside from that, our group communication is relatively understanding, owing to the fact that we all speak the same language and communicate our thoughts clearly. One thing that worked well with our group was that, in addition to attending university courses, we regularly have meetings to update our work and assist each other. IT is totally a new world  and full of challenges to us, however we have to admit that even though we have many challenges, we will try our best to cope with the deadlines. Nonetheless, there are a few areas where our group may improve, such as time management. Further explained, when we schedule our own project meetings, there is a high chance that someone would be late, which would disrupt the group's process due to poor time management.</h6>
         <h6 class="w3-justify">In terms of Github, we have many challenges in this part because we are more likely to make some errors while we input information. And everytime we did something wrong we have to start from the beginning of the process which means that we have to clone the repository again then code. That's why we have well learnt about the basics of Github, such as cloning repositories and sharing our work with one another using Github commands (git commit, git pull, git push, and so on), and we have improved significantly in using Github and working on it more effectively and fluently. Another challenge that we encountered is the artefact part. Honestly all of the team members desire to deliver our app prototype in order to illustrate what MyFitnessPal would work; however, doing with Figma is totally new to us since we have not practiced this before. As a result, we have together found out the video sources as references on the Internet and then gradually got familiar with Figma. Finally, we could finish it before the due date of ASM3 and confidently show it to the lecturer regardless of some areas that need to be improved to become better</h6>
  
       <br>
+=======
+<<<<<<< HEAD
+      <li><b><i>Tran Thi Thuy Tien</i></b></li>
+=======
+    
+      <li>Group reflection
+        <h6 class="w3-justify">The entire process for our group project went quite well in terms of catching up to the timeframe that had been set in the beginning. Aside from that, our group communication is relatively understanding, owing to the fact that we all speak the same language and communicate our thoughts clearly. One thing that worked well with our group was that, in addition to attending university courses, we regularly have meetings to update our work and assist each other. IT is a new world to us, even though we have many challenges, we can cope with the deadlines. Nonetheless, there are a few areas where our group may improve, such as time management. We schedule our own project meetings, and there is always someone who is late, disrupting the group's process due to poor time management.</h6>
+        <h6 class="w3-justify">In terms of Github, we have many challenges in this part because we are more likely to make some errors while we input information. And everytime we did something wrong we have to start from the beginning of the process which means that we have to clone the repository again then code. That's why we have well learnt about the basics of Github, such as cloning repositories and sharing our work with one another using Github commands (git commit, git pull, git push, and so on), and we have improved significantly in using Github and working on it more effectively and fluently.</h6>
+        <br>
+
+>>>>>>> b885aa16c858bb18f984b8edffeaa51c292eeaab
 
       <li>Tran Thi Thuy Tien
+>>>>>>> 5abba844fb03ddbc55337ea3a2b94ffdd334513a
         <h6 class="w3-justify">In this last assignment, my and my teammate have learned about how to manage our time reasonably - to finish the assignment on time. All my three course assignments are due on week 12, so I was really afraid that I might not accomplish all the tasks of written report, research about my part, and preparing slides and script for our presentation. However, thanks to all my three collaborative members in the team - has supported and motivated me to finish the deadline on time.</h6>
         <h6 class="w3-justify">I am really grateful that the teamwork process of our group members went well, with no conflicts or disagreement. Nevertheless, I believed that our presentation could have been more successful if we built the prototype to illustrate our project’s function better. Unfortunately, at the time we submitted the presentation slides, all of our group members were too busy doing other assignments, therefore, we had to find other applications' functions to illustrate for our project. Moving on to the report, I am very happy and excited when our team finished building the prototype (as presented above), to be more descriptive when it comes to our project. </h6>
-        <h6 class="w3-justify">Regarding Github activities, we were all fluently used this platform in this second assignment, not having much trouble and time-consuming issues like when we were doing it in the first assignment. Therefore, all of our team members have equally contributed their part into Github’s repository, and finished on time. </h6>
-       
+        <h6 class="w3-justify">Regarding Github activities, we were all fluently used this platform in this second assignment, not having much trouble and time-consuming issues like when we were doing it in the first assignment. Therefore, all of our team members have equally contributed their part into Github’s repository, and finished on time. </h6> 
         <br>
+        <li><b><i>Pham Minh Chau</i></b></li>
+        <h6 class="w3-justify">It has been a great 12 weeks to collaborate with amazing teammates to create and build an IT-related project idea. Considering the fact that all of our team members are from School of Business, I believe we have done a good job in trying to understand IT concepts, design tools and languages, different types of machine learning algorithms, artificial intelligence, and especially learning about possible risks associated with these technology as well as solutions to prevent those risks. Therefore, each week of the semester we attempted to upgrade our knowledge and skill a little bit, to fully be prepared for the last assignment.</h6>
+        <h6 class="w3-justify">To achieve this, we always try to enhance communication among all team members through regular team meetings (both online and offline) to timely identify problems or difficulties that some members might encounter. Accordingly, we were successful in minimising unnecessary conflicts that could sabotage our relationships.</h6>
+        <h6 class="w3-justify">Another thing that made me proud of my team is their ability to invest devotedly to the assignment and complete their allocated tasks in a timely and efficient manner despite insufficient IT experience and busy schedule. Specifically, I am grateful to have Nguyen as the group’s ‘IT professional’, who is not only hardworking but also never hesitates to research IT technology to help us with the Github and artefact parts. Also, Tien and Huy are among the most supportive, polite and helpful teammates that I have ever met. The three of them, together, have made this course become a memorable journey of my last semester at RMIT.</h6>
+      <br>
+      <li><b><i>Nguyen Le Khanh Nguyen</i></b></li>
+        <h6 class="w3-justify">It has been a great 12 weeks to collaborate with amazing teammates to create and build an IT-related project idea. Considering the fact that all of our team members are from School of Business, I believe we have done a good job in trying to understand IT concepts, design tools and languages, different types of machine learning algorithms, artificial intelligence, and especially learning about possible risks associated with these technology as well as solutions to prevent those risks. Therefore, each week of the semester we attempted to upgrade our knowledge and skill a little bit, to fully be prepared for the last assignment.</h6>
+        <h6 class="w3-justify">To achieve this, we always try to enhance communication among all team members through regular team meetings (both online and offline) to timely identify problems or difficulties that some members might encounter. Accordingly, we were successful in minimising unnecessary conflicts that could sabotage our relationships.</h6>
+        <h6 class="w3-justify">Another thing that made me proud of my team is their ability to invest devotedly to the assignment and complete their allocated tasks in a timely and efficient manner despite insufficient IT experience and busy schedule. Specifically, I am grateful to have Nguyen as the group’s ‘IT professional’, who is not only hardworking but also never hesitates to research IT technology to help us with the Github and artefact parts. Also, Tien and Huy are among the most supportive, polite and helpful teammates that I have ever met. The three of them, together, have made this course become a memorable journey of my last semester at RMIT.</h6>
+      <br>
 
-        <li>Pham Minh Chau
-          <h6 class="w3-justify">It has been a great 12 weeks to collaborate with amazing teammates to create and build an IT-related project idea. Considering the fact that all of our team members are from School of Business, I believe we have done a good job in trying to understand IT concepts, design tools and languages, different types of machine learning algorithms, artificial intelligence, and especially learning about possible risks associated with these technology as well as solutions to prevent those risks. Therefore, each week of the semester we attempted to upgrade our knowledge and skill a little bit, to fully be prepared for the last assignment.</h6>
-          <h6 class="w3-justify">To achieve this, we always try to enhance communication among all team members through regular team meetings (both online and offline) to timely identify problems or difficulties that some members might encounter. Accordingly, we were successful in minimising unnecessary conflicts that could sabotage our relationships.</h6>
-          <h6 class="w3-justify">Another thing that made me proud of my team is their ability to invest devotedly to the assignment and complete their allocated tasks in a timely and efficient manner despite insufficient IT experience and busy schedule. Specifically, I am grateful to have Nguyen as the group’s ‘IT professional’, who is not only hardworking but also never hesitates to research IT technology to help us with the Github and artefact parts. Also, Tien and Huy are among the most supportive, polite and helpful teammates that I have ever met. The three of them, together, have made this course become a memorable journey of my last semester at RMIT.</h6>
-        <br>
-        <li>Nguyen Le Khanh Nguyen
-          <h6 class="w3-justify">It has been a great 12 weeks to collaborate with amazing teammates to create and build an IT-related project idea. Considering the fact that all of our team members are from School of Business, I believe we have done a good job in trying to understand IT concepts, design tools and languages, different types of machine learning algorithms, artificial intelligence, and especially learning about possible risks associated with these technology as well as solutions to prevent those risks. Therefore, each week of the semester we attempted to upgrade our knowledge and skill a little bit, to fully be prepared for the last assignment.</h6>
-          <h6 class="w3-justify">To achieve this, we always try to enhance communication among all team members through regular team meetings (both online and offline) to timely identify problems or difficulties that some members might encounter. Accordingly, we were successful in minimising unnecessary conflicts that could sabotage our relationships.</h6>
-          <h6 class="w3-justify">Another thing that made me proud of my team is their ability to invest devotedly to the assignment and complete their allocated tasks in a timely and efficient manner despite insufficient IT experience and busy schedule. Specifically, I am grateful to have Nguyen as the group’s ‘IT professional’, who is not only hardworking but also never hesitates to research IT technology to help us with the Github and artefact parts. Also, Tien and Huy are among the most supportive, polite and helpful teammates that I have ever met. The three of them, together, have made this course become a memorable journey of my last semester at RMIT.</h6>
-        <br>
-
+        <li>Pham Xuan Huy
+          <h6 class="w3-justify"></h6>
+          <h6 class="w3-justify"></h6>
+          <br>
+  
        
        
         <!-- REF -->
